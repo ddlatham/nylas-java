@@ -10,6 +10,7 @@ import com.squareup.moshi.adapters.PolymorphicJsonAdapterFactory;
 public class Event extends AccountOwnedModel implements JsonObject {
 
 	private String calendar_id;
+	private String ical_uid;
 	private String title;
 	private String description;
 	private When when;
@@ -41,6 +42,10 @@ public class Event extends AccountOwnedModel implements JsonObject {
 		return calendar_id;
 	}
 
+	public String getIcalUid() {
+		return ical_uid;
+	}
+	
 	public String getTitle() {
 		return title;
 	}
@@ -95,7 +100,7 @@ public class Event extends AccountOwnedModel implements JsonObject {
 
 	@Override
 	public String toString() {
-		return "Event [id=" + getId() + ", calendar_id=" + calendar_id + ", title=" + title
+		return "Event [id=" + getId() + ", calendar_id=" + calendar_id + ", ical_uid=" + ical_uid + ", title=" + title
 				+ ", when=" + when + ", location=" + location + ", owner=" + owner + ", participants=" + participants
 				+ ", status=" + status + ", read_only=" + read_only + ", busy=" + busy + ", recurrence=" + recurrence
 				+ ", master_event_id=" + master_event_id + ", original_start_time=" + original_start_time + "]";
