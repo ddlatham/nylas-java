@@ -66,7 +66,6 @@ native.auth.exchange.server=
 # Native Authentication with a generic IMAP provider
 native.auth.imap.name=SpongeBob
 native.auth.imap.email=spongebob@example.com
-native.auth.imap.password=SPONGEBOB_PASSWORD
 native.auth.imap.host=imap.example.com
 native.auth.imap.port=993
 native.auth.imap.username=spongebob@example.com
